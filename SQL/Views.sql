@@ -5,6 +5,6 @@ where f.modell = m.modell_id
 AND m.hersteller = h.hersteller_id;
 commit;
 
-select * from view_fahrzeuge;
+
 
 
