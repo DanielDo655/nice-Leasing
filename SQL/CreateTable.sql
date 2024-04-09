@@ -55,5 +55,3 @@ foreign key (Kunden_ID) references tbl_Kunden(Kunden_ID)
 
 
 
-
-

@@ -9,7 +9,7 @@
 error_reporting(0);
 
 if (isset($_POST['Nachname'], $_POST['Vorname'], $_POST['PLZ'], $_POST['Perso'], $_POST['Fuehrer'], $_POST['Passwort'])){
-$c = oci_connect("system", "oracle", "localhost/orcl", "AL32UTF8");
+$c = oci_connect("Leasing", "Leasing", "localhost/orcl", "AL32UTF8");
 $sql = "call proc_NeuerKunde('$_POST[Nachname]', '$_POST[Vorname]', '$_POST[PLZ]', '$_POST[Perso]', '$_POST[Fuehrer]', '$_POST[Passwort]')";
 $s1 = oci_parse($c, $sql);
 

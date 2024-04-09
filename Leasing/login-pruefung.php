@@ -3,7 +3,7 @@
 
 error_reporting(0);
 if (isset($_POST['Passwort'], $_POST['Nachname'])){
-$c = oci_connect("system", "oracle", "localhost/orcl", "AL32UTF8");
+$c = oci_connect("Leasing", "Leasing", "localhost/orcl", "AL32UTF8");
 $sql = "select func_PasswortCheck('$_POST[Nachname]','$_POST[Passwort]') as ergebnis from dual";
 $s1 = oci_parse($c, $sql);
 oci_execute(($s1));

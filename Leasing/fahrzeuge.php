@@ -15,7 +15,7 @@ session_start();
     error_reporting(0);
     if(isset($_SESSION["login"]))
     {
-        $c = oci_connect("system", "oracle", "localhost/orcl", "AL32UTF8");
+        $c = oci_connect("Leasing", "Leasing", "localhost/orcl", "AL32UTF8");
         $sql = "select * from view_fahrzeuge";
         $s1 = oci_parse($c, $sql);
         oci_execute(($s1));
